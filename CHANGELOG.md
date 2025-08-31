@@ -1,3 +1,8 @@
+## 1.1.0 (2025-08-31)
+
+* Merge branch 'main' of https://github.com/deepanshucse/react-native-voice-vosk ([7b82f64](https://github.com/deepanshucse/react-native-voice-vosk/commit/7b82f64))
+* feat: update release workflow to publish to npm and GitHub Packages ([a43815c](https://github.com/deepanshucse/react-native-voice-vosk/commit/a43815c))
+
 ## 1.0.0 (2025-08-31)
 
 * fix: ensure gradlew is executable before building Android example ([adf54ea](https://github.com/deepanshucse/react-native-voice-vosk/commit/adf54ea))
