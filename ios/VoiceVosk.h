@@ -1,5 +1,6 @@
-#import <VoiceVoskSpec/VoiceVoskSpec.h>
+#import <React/RCTBridgeModule.h>
+#import <React/RCTEventEmitter.h>
 
-@interface VoiceVosk : NSObject <NativeVoiceVoskSpec>
+@interface VoiceVosk : RCTEventEmitter <RCTBridgeModule>
 
 @end
