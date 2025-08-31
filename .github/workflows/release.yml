@@ -90,4 +90,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+        run: |
+          # Publish to npmjs.org
+          npx semantic-release
+
+          # Publish also to GitHub Packages
+          npm config set registry https://npm.pkg.github.com/
+          npm config set //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+          npm publish
