@@ -1,6 +1,6 @@
 {
   "name": "react-native-voice-vosk",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Offline speech-to-text for React Native and Expo using Vosk (iOS & Android, works without internet).",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -38,7 +38,7 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
     "prepare": "bob build",
-    "release": "release-it --only-version"
+    "prepublishOnly": "yarn clean && yarn prepare"
   },
   "keywords": [
     "react-native",
@@ -68,6 +68,12 @@
     "@react-native/babel-preset": "0.81.0",
     "@react-native/eslint-config": "^0.78.0",
     "@release-it/conventional-changelog": "^9.0.2",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.5",
+    "@semantic-release/npm": "^12.0.2",
+    "@semantic-release/release-notes-generator": "^14.0.3",
     "@types/jest": "^29.5.5",
     "@types/react": "^19.1.0",
     "commitlint": "^19.6.1",
@@ -81,6 +87,7 @@
     "react-native": "0.81.0",
     "react-native-builder-bob": "^0.40.13",
     "release-it": "^17.10.0",
+    "semantic-release": "^24.2.7",
     "turbo": "^1.10.7",
     "typescript": "^5.8.3"
   },

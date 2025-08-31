@@ -1,0 +1,64 @@
+# Development files
+.github/
+.vscode/
+.idea/
+*.log
+.DS_Store
+.env*
+
+# Source files (we publish built files)
+src/
+tsconfig.json
+tsconfig.build.json
+babel.config.js
+jest.config.js
+metro.config.js
+
+# Build artifacts
+android/build/
+android/.gradle/
+android/app/build/
+ios/build/
+*.tgz
+
+# Testing
+__tests__/
+__mocks__/
+coverage/
+.nyc_output/
+
+# Example app
+example/
+
+# Documentation development
+docs/
+screenshots/
+
+# Dependency directories
+node_modules/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.log
+
+# Development tools
+.eslintrc*
+.prettierrc*
+.editorconfig
+lefthook.yml
+commitlint.config.js
+
+# Git
+.git/
+.gitignore
+
+# CI/CD
+.github/
+
+# Package managers
+yarn.lock
+package-lock.json
+.yarn/
+.pnp.*
